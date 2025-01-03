@@ -1,102 +1,91 @@
--- Insert products data
-INSERT INTO products (image, name, title_one, title_two, created_at, updated_at) VALUES
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Smooth', 'Smoothing One Step', 'Smoothing Jepang', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Gunting Rambut', 'Hair Cut', 'Gunting Rambut + Cuci + Hair Tonic', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Inaura', 'Hair Mask', 'Matrix', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Creambath', 'Creambath Treatment', 'Keratin Treatment', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Highlight', 'Highlight', 'Balayage', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Bleach', 'Full Bleach', 'Colouring No Bleach', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Colouring', 'Colouring by Matrix / Ilvasto', 'Colouring by Loreal', NOW(), NOW()),
-('images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Face', 'Face Treatment', '', NOW(), NOW());
 
--- Insert prices data for Smoothing One Step
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(1, 'one', 'Rambut Cowok', 130000, NOW(), NOW()),
-(1, 'one', 'Pendek Bob', 180000, NOW(), NOW()),
-(1, 'one', 'Pendek Sebahu', 200000, NOW(), NOW()),
-(1, 'one', 'Panjang di Tali BH', 250000, NOW(), NOW()),
-(1, 'one', 'Panjang Di Bawah Tali BH', 280000, NOW(), NOW()),
-(1, 'one', 'Panjang Sepinggang', 300000, NOW(), NOW()),
-(1, 'two', 'Rambut Cowok', 150000, NOW(), NOW()),
-(1, 'two', 'Pendek Bob', 200000, NOW(), NOW()),
-(1, 'two', 'Pendek Sebahu', 250000, NOW(), NOW()),
-(1, 'two', 'Panjang di Tali BH', 300000, NOW(), NOW()),
-(1, 'two', 'Panjang Di Bawah Tali BH', 350000, NOW(), NOW()),
-(1, 'two', 'Panjang Sepinggang', 400000, NOW(), NOW());
 
--- Insert prices data for Hair Cut
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(2, 'one', 'Men', 30000, NOW(), NOW()),
-(2, 'one', 'Women', 40000, NOW(), NOW()),
-(2, 'two', 'Men', 35000, NOW(), NOW()),
-(2, 'two', 'Women', 45000, NOW(), NOW()),
-(2, 'one', 'Gunting Poni', 10000, NOW(), NOW());
+INSERT INTO `prices` (`id`, `product_id`, `price_type`, `name`, `price`, `created_at`, `updated_at`) VALUES
+(1, 1, 'one', 'Rambut Cowok', '130000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(2, 1, 'one', 'Pendek Bob', '180000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(3, 1, 'one', 'Pendek Sebahu', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(4, 1, 'one', 'Panjang di Tali BH', '250000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(5, 1, 'one', 'Panjang Di Bawah Tali BH', '280000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(6, 1, 'one', 'Panjang Sepinggang', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(7, 1, 'two', 'Rambut Cowok', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(8, 1, 'two', 'Pendek Bob', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(9, 1, 'two', 'Pendek Sebahu', '250000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(10, 1, 'two', 'Panjang di Tali BH', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(11, 1, 'two', 'Panjang Di Bawah Tali BH', '350000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(12, 1, 'two', 'Panjang Sepinggang', '400000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(13, 2, 'one', 'Men', '30000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(14, 2, 'one', 'Women', '40000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(15, 2, 'two', 'Men', '35000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(16, 2, 'two', 'Women', '45000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(17, 2, 'one', 'Gunting Poni', '10000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(18, 3, 'one', 'Inaura', '65000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(19, 3, 'one', 'Matrix', '75000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(20, 3, 'one', 'Hair Spa Loreal', '85000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(21, 4, 'one', 'Kids', '35000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(22, 4, 'one', 'Dewasa', '55000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(23, 4, 'one', 'CC Blow', '30000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(24, 4, 'one', 'CC Catok', '35000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(25, 4, 'one', 'CC Curly', '40000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(26, 4, 'two', 'Keratin Treatment', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(27, 5, 'one', 'Short (Men)', '100000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(28, 5, 'one', 'Medium (Bob Pendek)', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(29, 5, 'one', 'Long 1 (Sebahu)', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(30, 5, 'one', 'Long 2 (Tali Bra)', '250000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(31, 5, 'one', 'Long 3 (Bawah Tali Bra)', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(32, 5, 'two', 'Medium (Bob Pendek)', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(33, 5, 'two', 'Long 1 (Sebahu)', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(34, 5, 'two', 'Long 2 (Tali Bra)', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(35, 5, 'two', 'Long 3 (Bawah Tali Bra)', '350000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(36, 6, 'one', 'Short (Men)', '100000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(37, 6, 'one', 'Medium (Bob Pendek)', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(38, 6, 'one', 'Long 1 (Sebahu)', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(39, 6, 'one', 'Long 2 (Tali Bra)', '350000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(40, 6, 'one', 'Long 3 (Bawah Tali Bra)', '400000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(41, 6, 'two', 'Short (Men)', '30000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(42, 6, 'two', 'Medium (Bob Pendek)', '100000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(43, 6, 'two', 'Long 1 (Sebahu)', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(44, 6, 'two', 'Long 2 (Tali Bra)', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(45, 6, 'two', 'Long 3 (Bawah Tali Bra)', '250000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(46, 7, 'one', 'Short (Men)', '70000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(47, 7, 'one', 'Medium (Bob Pendek)', '180000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(48, 7, 'one', 'Long 1 (Sebahu)', '250000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(49, 7, 'one', 'Long 2 (Tali Bra)', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(50, 7, 'one', 'Long 3 (Bawah Tali Bra)', '350000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(51, 7, 'two', 'Short (Men)', '100000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(52, 7, 'two', 'Medium (Bob Pendek)', '200000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(53, 7, 'two', 'Long 1 (Sebahu)', '300000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(54, 7, 'two', 'Long 2 (Tali Bra)', '350000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(55, 7, 'two', 'Long 3 (Bawah Tali Bra)', '400000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(56, 8, 'one', 'Make Up', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(57, 8, 'one', 'Kerok Alis', '10000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(58, 8, 'one', 'Facial Latulip', '55000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(59, 8, 'one', 'Facial Biokos', '65000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(60, 8, 'one', 'Totok Wajah', '30000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(61, 8, 'one', 'Ear Candle', '25000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(62, 8, 'one', 'Tanam Bulu Mata', '50000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(63, 8, 'one', 'Eyelash Natural', '100000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(64, 8, 'one', 'Eyelash Volume', '130000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(65, 8, 'one', 'Eyelash Tebal', '150000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(66, 8, 'one', 'Remove Eyelash', '25000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(67, 8, 'one', 'Waxing Under Arm', '35000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(68, 8, 'one', 'Lepas Sambungan', '25000.00', '2024-12-27 04:33:35', '2024-12-27 04:33:35');
 
--- Insert prices data for Hair Mask
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(3, 'one', 'Inaura', 65000, NOW(), NOW()),
-(3, 'one', 'Matrix', 75000, NOW(), NOW()),
-(3, 'one', 'Hair Spa Loreal', 85000, NOW(), NOW());
 
--- Insert prices for Creambath Treatment
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(4, 'one', 'Kids', 35000, NOW(), NOW()),
-(4, 'one', 'Dewasa', 55000, NOW(), NOW()),
-(4, 'one', 'CC Blow', 30000, NOW(), NOW()),
-(4, 'one', 'CC Catok', 35000, NOW(), NOW()),
-(4, 'one', 'CC Curly', 40000, NOW(), NOW()),
-(4, 'two', 'Keratin Treatment', 200000, NOW(), NOW());
+INSERT INTO `products` (`id`, `image`, `name`, `title_one`, `title_two`, `created_at`, `updated_at`) VALUES
+(1, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Smooth', 'Smoothing One Step', 'Smoothing Jepang', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(2, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Gunting Rambut', 'Hair Cut', 'Gunting Rambut + Cuci + Hair Tonic', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(3, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Inaura', 'Hair Mask', 'Matrix', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(4, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Creambath', 'Creambath Treatment', 'Keratin Treatment', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(5, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Highlight', 'Highlight', 'Balayage', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(6, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Bleach', 'Full Bleach', 'Colouring No Bleach', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(7, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Colouring', 'Colouring by Matrix / Ilvasto', 'Colouring by Loreal', '2024-12-27 04:33:35', '2024-12-27 04:33:35'),
+(8, 'images/01JG0WW5KDF4TCBDN61ZCZNQRX.jpg', 'Face', 'Face Treatment', '', '2024-12-27 04:33:35', '2024-12-27 04:33:35');
 
--- Insert prices for Highlight
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(5, 'one', 'Short (Men)', 100000, NOW(), NOW()),
-(5, 'one', 'Medium (Bob Pendek)', 150000, NOW(), NOW()),
-(5, 'one', 'Long 1 (Sebahu)', 200000, NOW(), NOW()),
-(5, 'one', 'Long 2 (Tali Bra)', 250000, NOW(), NOW()),
-(5, 'one', 'Long 3 (Bawah Tali Bra)', 300000, NOW(), NOW()),
-(5, 'two', 'Medium (Bob Pendek)', 150000, NOW(), NOW()),
-(5, 'two', 'Long 1 (Sebahu)', 200000, NOW(), NOW()),
-(5, 'two', 'Long 2 (Tali Bra)', 300000, NOW(), NOW()),
-(5, 'two', 'Long 3 (Bawah Tali Bra)', 350000, NOW(), NOW());
 
--- Insert prices for Full Bleach and Colouring No Bleach
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(6, 'one', 'Short (Men)', 100000, NOW(), NOW()),
-(6, 'one', 'Medium (Bob Pendek)', 200000, NOW(), NOW()),
-(6, 'one', 'Long 1 (Sebahu)', 300000, NOW(), NOW()),
-(6, 'one', 'Long 2 (Tali Bra)', 350000, NOW(), NOW()),
-(6, 'one', 'Long 3 (Bawah Tali Bra)', 400000, NOW(), NOW()),
-(6, 'two', 'Short (Men)', 30000, NOW(), NOW()),
-(6, 'two', 'Medium (Bob Pendek)', 100000, NOW(), NOW()),
-(6, 'two', 'Long 1 (Sebahu)', 150000, NOW(), NOW()),
-(6, 'two', 'Long 2 (Tali Bra)', 200000, NOW(), NOW()),
-(6, 'two', 'Long 3 (Bawah Tali Bra)', 250000, NOW(), NOW());
+INSERT INTO `services` (`id`, `user`, `service_name`, `service_type`, `phone`, `date_booking`, `created_at`, `updated_at`) VALUES
+(1, 'admin@gmail.com', 'Smooth', 'Pendek Bob', '082328035237', '2024-12-31T22:06', '2024-12-31 04:06:09', '2024-12-31 04:06:09');
 
--- Insert prices for Colouring by Matrix/Ilvasto and Loreal
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(7, 'one', 'Short (Men)', 70000, NOW(), NOW()),
-(7, 'one', 'Medium (Bob Pendek)', 180000, NOW(), NOW()),
-(7, 'one', 'Long 1 (Sebahu)', 250000, NOW(), NOW()),
-(7, 'one', 'Long 2 (Tali Bra)', 300000, NOW(), NOW()),
-(7, 'one', 'Long 3 (Bawah Tali Bra)', 350000, NOW(), NOW()),
-(7, 'two', 'Short (Men)', 100000, NOW(), NOW()),
-(7, 'two', 'Medium (Bob Pendek)', 200000, NOW(), NOW()),
-(7, 'two', 'Long 1 (Sebahu)', 300000, NOW(), NOW()),
-(7, 'two', 'Long 2 (Tali Bra)', 350000, NOW(), NOW()),
-(7, 'two', 'Long 3 (Bawah Tali Bra)', 400000, NOW(), NOW());
 
--- Insert prices for Face Treatment
-INSERT INTO prices (product_id, price_type, name, price, created_at, updated_at) VALUES
-(8, 'one', 'Make Up', 150000, NOW(), NOW()),
-(8, 'one', 'Kerok Alis', 10000, NOW(), NOW()),
-(8, 'one', 'Facial Latulip', 55000, NOW(), NOW()),
-(8, 'one', 'Facial Biokos', 65000, NOW(), NOW()),
-(8, 'one', 'Totok Wajah', 30000, NOW(), NOW()),
-(8, 'one', 'Ear Candle', 25000, NOW(), NOW()),
-(8, 'one', 'Tanam Bulu Mata', 50000, NOW(), NOW()),
-(8, 'one', 'Eyelash Natural', 100000, NOW(), NOW()),
-(8, 'one', 'Eyelash Volume', 130000, NOW(), NOW()),
-(8, 'one', 'Eyelash Tebal', 150000, NOW(), NOW()),
-(8, 'one', 'Remove Eyelash', 25000, NOW(), NOW()),
-(8, 'one', 'Waxing Under Arm', 35000, NOW(), NOW()),
-(8, 'one', 'Lepas Sambungan', 25000, NOW(), NOW());
+INSERT INTO `users` (`id`, `name`, `role`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'Admin', 'admin@gmail.com', '2024-12-26 21:33:21', '$2y$12$ysaggIwaP2y.t7qvVo.MIedQA3uQ5vyDGPu0yS1iMqjvFvIyX9RmC', '5COEdJH1ksyoTcyDj3V5PSMrfc3gsJe7udkKX9GMNmQ80UuTiPH51Y4dDMs6', '2024-12-26 21:33:22', '2024-12-26 21:33:22');
+

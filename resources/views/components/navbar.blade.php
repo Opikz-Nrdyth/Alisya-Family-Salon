@@ -21,7 +21,7 @@
 
                         <div class="container-menu-user" style="display: none">
                             @if (auth()->check() && auth()->user()->role == 'Admin')
-                                <a href="admin"> <i class="fa-solid fa-user-tie"></i> Login Admin</a>
+                                <a href="/admin"> <i class="fa-solid fa-user-tie"></i> Login Admin</a>
                             @endif
                             <a href="{{ route('logout') }}">
                                 <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout

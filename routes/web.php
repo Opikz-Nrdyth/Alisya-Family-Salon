@@ -56,76 +56,77 @@ Route::get('/', [Welcome::class, 'welcome'])->name('home');
 Route::get('/testimonials', function () {
     $testimonials = [
         [
-            'message' => 'Pelayanan yang luar biasa! Saya merasa sangat nyaman dan puas dengan potongan rambut saya. Staf salon sangat ramah dan profesional.',
+            'message' => 'Puass bgt aku nyalon disini, Rambut singaku di sulap dg smoothing jepang. Asli keren, Murah, puas bgt sm pelayanan nya, ownernya Luar biasa Ramah.',
             'user' => [
-                'name' => 'Sarah Johnson',
+                'name' => 'Fitriana Rahman',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Salon ini benar-benar membuat saya merasa istimewa. Tidak hanya rambut saya yang jadi lebih bagus, tapi suasana di sini juga sangat menyenangkan.',
+            'message' => 'Bagus, tempatnya nyaman walaupun gak terlalu besar. Owner ramah banget dan mau turun tangan langsung. Recommended.',
             'user' => [
-                'name' => 'Maria S.',
+                'name' => 'Ari Nurarofah',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Sangat puas dengan perawatan kuku dan rambut saya. Hasilnya sempurna dan tahan lama! Tempatnya juga sangat bersih dan nyaman.',
+            'message' => 'bagussssss potongggan rambutnyaaa.',
             'user' => [
-                'name' => 'Jessica Brown',
+                'name' => 'Tia',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Ini adalah salon terbaik yang pernah saya coba! Saya selalu merasa lebih percaya diri setelah setiap kunjungan.',
+            'message' => 'Pokoknya recommended, kakaknya ramah-ramah, best service, hair cutnya sesuai sama yang diminta. Sukses selalu kak.',
             'user' => [
-                'name' => 'Linda White',
+                'name' => 'Eca Adisti Muhva',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Saya selalu merasa puas setelah melakukan perawatan wajah di salon ini. Tenaga ahli yang sangat berpengalaman membuat saya merasa aman.',
+            'message' => 'Setelah pindah2 salon utk mewarnai rambut akhirnya nemu salon yg hasilnya sesuai dan harga bersahabat dikantong..terimakasih alisya salon jd langganan dechh.',
             'user' => [
-                'name' => 'Anne Lee',
+                'name' => 'Sapto Hendra',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Layanan yang sangat memuaskan! Saya datang untuk treatment rambut dan hasilnya luar biasa. Wajib coba!',
+            'message' => 'Selalu puas dan amaze colouring disini. No pricy tapi hasil gak kalah sama salon2 di mall. Tengkyuu mb bella luvv.',
             'user' => [
-                'name' => 'Sophia Kim',
+                'name' => 'Maria Etik',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Salon ini benar-benar tahu bagaimana cara merawat rambut. Setelah perawatan di sini, rambut saya jadi lebih sehat dan berkilau!',
+            'message' => 'Asli sih... selalu sukak sama hasilnya tiap kesana... ownernya ramah... pegawai nya juga seru.. pokoknya nyaman banget...',
             'user' => [
-                'name' => 'Emily Carter',
+                'name' => 'Abimanyu Putra Wijaya',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Saya suka dengan pelayanan di salon ini. Mereka selalu memberikan tips yang berguna tentang perawatan rambut dan kulit.',
+            'message' => 'Pelayanan baik cepat dan ramah, sesuai request model rambut yg kita mau. Lancar dan sukses teruss alisya family salon.',
             'user' => [
-                'name' => 'Olivia Turner',
+                'name' => 'Pradika Shopee',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Hasil potongan rambut saya luar biasa! Salon ini sangat mengerti apa yang saya inginkan. Saya pasti akan kembali lagi.',
+            'message' => 'Hasilnya sangat memuaskan sekalii, tempatnya nyaman, dan pelayanannya ramah.',
             'user' => [
-                'name' => 'Amelia Harris',
+                'name' => 'Cindy Aulia Wardani',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ],
         [
-            'message' => 'Saya melakukan perawatan wajah di sini, dan hasilnya sangat memuaskan. Stafnya sangat ramah dan ahli dalam bidangnya.',
+            'message' => 'Tempat kecil tapi nyaman mbaknya juga diajak sharing enak pelayanan bagus warna colouring bagus.',
             'user' => [
-                'name' => 'Isabella Martinez',
+                'name' => 'Annisa Waskitha',
                 'profile' => 'https://placehold.co/250x250'
             ]
         ]
     ];
+
 
     return view('testimonials', ['testimonials' => $testimonials]);
 })->name('testimonials');

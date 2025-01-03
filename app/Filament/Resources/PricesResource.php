@@ -23,6 +23,8 @@ class PricesResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-tag';
 
+
+
     public static function form(Form $form): Form
     {
         return $form
